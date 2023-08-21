@@ -1,0 +1,36 @@
+.logo{
+    width: 75px;
+    height: 40px;
+    border-radius: 30%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li a{
+color: rgb(202, 76, 22);
+text-decoration: none;
+font-size: 18px;
+position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: burlywood;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
